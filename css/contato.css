@@ -1,0 +1,86 @@
+footer {
+  background: black;
+}
+
+.contato {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  gap: 100px;
+  padding: 70px 20px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 15px;
+}
+
+#linkedin {
+  grid-row: 2;
+}
+
+#github {
+  grid-row: 3;
+}
+
+.contato p {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.contato span {
+  color: #8f8f8f;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  place-self: center start;
+  font-size: 1.2rem;
+}
+
+.links a:hover {
+  padding: 5px 10px;
+  background: white;
+  border-radius: 5px;
+  color: black;
+  transition: ease-in-out 0.5s;
+}
+
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .contato p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contato {
+    gap: 30px;
+  }
+
+  .links a {
+    font-size: 1rem;
+  }
+
+  .links {
+    column-gap: 10px;
+  }
+
+  .links svg {
+    width: 28px;
+    height: 28px;
+  }
+}

@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+  justify-items: center;
+  font-family: poppins;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .experiencia .subtitulo {
+    color: #141414;
+    text-transform: capitalize;
+    max-width: initial;
+    font-size: 3rem;
+  }
+}
