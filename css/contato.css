@@ -60,7 +60,6 @@ footer {
     grid-template-columns: 1fr;
     gap: 50px;
   }
-
   .contato p {
     font-size: 1.125rem;
   }
@@ -73,6 +72,25 @@ footer {
 
   .links a {
     font-size: 1rem;
+  }
+
+  .links {
+    column-gap: 10px;
+  }
+
+  .links svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 300px) {
+  .contato {
+    gap: 30px;
+  }
+
+  .links > a {
+    font-size: 0.6rem;
   }
 
   .links {
